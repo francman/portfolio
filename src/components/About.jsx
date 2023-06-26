@@ -30,21 +30,25 @@ const About = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>who I am ...</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        Hi again, I'm Frank - an Electrical, Computer and Systems Engineer based in Greater Boston, 
+        Massachusetts. Over the past 5+ years, I've worked as a Systems Engineer on various projects and 
+        for various companies. My interests are always shifting but at a core, I enjoy engineering 
+        communication systems. There are tons of great technologies and lots of untapped potential if 
+        technologies operate in "silos". 
       </motion.p>
 
+      <motion.p
+        variants={fadeIn('', '', 0.1, 1)}
+        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+        These days, I work for Amazon as a Robotics Systems Development Engineer, focused on 
+        integrating and deploying new technologies into Amazon's new and existing network. 
+      </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
