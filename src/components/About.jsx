@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
@@ -36,18 +36,18 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Hi again, I'm Frank - an Electrical, Computer and Systems Engineer based in Greater Boston, 
-        Massachusetts. Over the past 5+ years, I've worked as a Systems Engineer on various projects and 
+        Hi again, I&apos;m Frank - an Electrical, Computer and Systems Engineer based in Greater Boston, 
+        Massachusetts. Over the past 5+ years, I&apos;ve worked as a Systems Engineer on various projects and 
         for various companies. My interests are always shifting but at a core, I enjoy engineering 
         communication systems. There are tons of great technologies and lots of untapped potential if 
-        technologies operate in "silos". 
+        technologies operate in &ldquo;silos&rdquo; 
       </motion.p>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
         These days, I work for Amazon as a Robotics Systems Development Engineer, focused on 
-        integrating and deploying new technologies into Amazon's new and existing network. 
+        integrating and deploying new technologies into Amazon&apos;s new and existing network. 
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
